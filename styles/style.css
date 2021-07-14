@@ -1,0 +1,186 @@
+  /*-------------------------------------
+                fonts 
+   --------------------------------------*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ 
+  /*-----------------------------------
+              utiliyes 
+   ------------------------------------*/
+  
+  
+
+body{
+     margin: 0%;
+     padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;}
+    
+main{
+    display: flex;
+    justify-content: center; 
+}
+.container{
+  flex-direction: column;
+  align-items: center;
+}
+
+   
+/* ----------------------------------------------
+                 player details start
+ ------------------------------------------------------*/
+
+.top-heading{
+    display: flex; 
+    background-color: blue;
+}
+.heading{
+    width: 50%; 
+    padding-right: 140.99px;
+    padding-top: 153px;
+    padding-bottom: 86px;
+} 
+h1 {
+  font-size: 45px;
+  padding-left: 150px;
+  margin-bottom: -30px;
+}
+/*-------------------------------------------------------
+                      button effect start
+ ---------------------------------------------------------*/
+
+ .button {
+  border-radius: 4px;
+  background-color: #e21ef4d7;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+  
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button span:after {
+     content: '\00bb'; 
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+   .button:hover span:after {
+    opacity: 1;
+    right: 0; 
+  }
+  /*-------------------------------------------------- 
+                button effect end
+  ---------------------------------------------------- */
+.heading img{
+     width: 100%; 
+}
+section{
+    margin-bottom: 70px
+}
+.players-details{
+     display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-column-gap:25px;
+     width: 1200px; 
+     margin-left: 80px;
+} 
+ .players{
+    box-shadow: 10px 10px 50px gray;
+    margin-left: 5px;
+    padding:10px; 
+     margin-top: 27px; 
+}
+.players .thumbnail img{
+    width: 345px;
+    height: 474px;
+    padding-left: 10px;
+  
+}
+/* ----------------------------------------------
+                 player details end
+ ------------------------------------------------------*/
+
+.club{
+  text-align: left;
+  margin-top: 100px;
+ padding: 50px 50px;
+ background-color: aqua;
+ box-shadow: 10px 10px 10px gray;
+ display: flex;
+ margin-left: 120px;
+ margin-right: 70px;
+}
+.club img{
+  width: 200px;
+  padding-left: 30px;
+
+} 
+.club a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: 700;
+  background-image: linear-gradient(white , gray);
+  border-radius: 10px;
+}
+h3{
+  font-weight: 900;
+  font-size: 100px;
+  text-align: center;
+
+}
+
+
+
+
+   /*-------------------------------------------------
+                    footer details start
+    -------------------------------------------------- */
+
+footer{
+    text-align: center;
+    color: rgb(15, 15, 15);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 156px;
+}
+
+footer img {
+width: 483.87px;
+height: 110px;
+}
+/*---------------------------------------------
+               footer detalis end
+ --------------------------------------------- */
+@media only screen and (max-width:768){
+  .heading{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+ .players{
+   display: grid;
+   grid-template-columns:repeat(1, 1fr);
+   width: 104%;
+ }
+}
